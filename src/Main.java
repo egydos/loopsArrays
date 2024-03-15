@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -75,12 +77,64 @@ public class Main {
 
         System.out.println("pakeistos raides i *:   " + filmasParis.replace("a", "*").replace("A", "*"));
 
+        System.out.println("6 uzdavinys-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         //6. Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
 
 
         String filmasBreakfast = "Breakfast at Tiffany's";
         String filmasSpace = "2001: A Space Odyssey";
         String filmasWonderfull = "It's a Wonderful Life";
+
+        String tikbalsesParis = filmasParis.replaceAll("[aAiIeEuUyYoO]", "");
+        String tikbalsesBreakfast = filmasBreakfast.replaceAll("[aAiIeEuUyYoO]", "");
+        String tikbalsesSpace = filmasSpace.replaceAll("[aAiIeEuUyYoO]", "");
+        String tikbalsesWonderfull = filmasWonderfull.replaceAll("[aAiIeEuUyYoO]", "");
+
+
+        System.out.println("Originalus Filmo pavadinimas : " + filmasParis);
+        System.out.println("be balsiu = " + tikbalsesParis);
+        System.out.println("Originalus Filmo pavadinimas : " + filmasBreakfast);
+        System.out.println("be balsiu = " + tikbalsesBreakfast);
+        System.out.println("Originalus Filmo pavadinimas : " + filmasSpace);
+        System.out.println("be balsiu = " + tikbalsesSpace);
+        System.out.println("Originalus Filmo pavadinimas : " + filmasWonderfull);
+        System.out.println("be balsiu = " + tikbalsesWonderfull);
+
+        System.out.println("7 uzdavinys-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+        //7. Stringe, kurį generuoja toks kodas: "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope" Surasti ir atspausdinti epizodo numerį.
+
+        String uzrasas = "Star Wars: Episode \"+ \" \".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + \" - A New Hope";
+
+        int epizodas = (int) (((Math.random() * 10)) + ((int) (Math.random() * 7) + 1));
+
+
+        System.out.println("epizodo numeris: " + epizodas);
+
+        System.out.println("8 uzdavinys-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+//8. Suskaičiuoti kiek stringe “Don't Be a Menace to South Central While Drinking Your Juice in the Hood” yra žodžių trumpesnių arba lygių nei 5 raidės. Pakartokite kodą su stringu “Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale”.
+
+        String uzrasas1 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
+
+        // Išskaidome sakinį į žodžius pagal tarpus
+        String[] zodziai = uzrasas1.split(" ");
+
+        // Inicializuojame kintamąjį žodžių skaičiavimui
+        int trumpesniArbaLygus5 = 0;
+
+        // Einame per kiekvieną žodį ir tikriname, ar jis trumpesnis arba lygus 5 raidėms
+
+            if (zodziai.length ()<= 5) {
+                trumpesniArbaLygus5++;
+            }
+
+
+        // Atspausdiname rezultatą
+        System.out.println("Žodžių, trumpesnių arba lygių nei 5 raidės: " + trumpesniArbaLygus5);
+
+//Tai yra ekvivalentiškas kodas Java kalba. Jis taip pat skaido sakinį į žodžius, einą per kiekvieną žodį ir tikrina, ar jis trumpesnis arba lygus 5 raidėms, ir prideda vienetą prie kintamojo, jei sąlyga yra tenkinama. Galiausiai atspausdinamas rezultatas.
+
+
+
 
 
 

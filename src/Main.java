@@ -125,6 +125,7 @@ public class Main {
 
             if (zodziai.length ()<= 5) {
                 trumpesniArbaLygus5++;
+
             }
 
 

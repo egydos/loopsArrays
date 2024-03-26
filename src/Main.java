@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         //         012345
-        String name = "Naglisaaa";
+        String name = "naglisaaa";
         System.out.println(name.contains("a")); // jeigu randa zodyje a raide tada true ismeta, jei neranda tada false
         System.out.println(name.contains("h"));// jeigu randa zodyje h raide tada true ismeta, jei neranda tada false
         System.out.println(name.toLowerCase());// keicia visas raides i mazasias
@@ -20,6 +20,7 @@ public class Main {
         System.out.println(name.isEmpty()); // patikrina ar nera tuscias stringas
         System.out.println(name.trim());// istrins tarpus pries zodi ir po zodzio pabaigoje, viduryje sakinio tarpu neistrins
         System.out.println(name.substring(3)); // istrina pirmas 3 raides, atsakymas zodis be pirmu 3 raidziu
+        System.out.println(name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase() + " pakeicia 1 raide i didziaja, o kitas mazosiomis");  // Paima pirma raide ir padaro ja didziaja, antra raide ir kitos bus mazosios
         System.out.println("substring 2 " + name.substring(2, 5));// atsakymas (be pirmu 2 raidziu) bus  iki 5 simbolio (5tas simbolis ieina) 6 + simboliai neieina
         System.out.println(name.replace("a", "i"));// pakeicia visas raides is a -> i
         System.out.println(name.replaceFirst("a", "i"));// pakeicia tik pirma a raide zodyje, kitas a raides nekeicia.
@@ -115,22 +116,22 @@ public class Main {
 
         String uzrasas1 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
 
-        // Išskaidome sakinį į žodžius pagal tarpus
-        String[] zodziai = uzrasas1.split(" ");
-
-        // Inicializuojame kintamąjį žodžių skaičiavimui
-        int trumpesniArbaLygus5 = 0;
-
-        // Einame per kiekvieną žodį ir tikriname, ar jis trumpesnis arba lygus 5 raidėms
-
-            if (zodziai.length ()<= 5) {
-                trumpesniArbaLygus5++;
+//        // Išskaidome sakinį į žodžius pagal tarpus
+//        String[] zodziai = uzrasas1.split(" ");
+//
+//        // Inicializuojame kintamąjį žodžių skaičiavimui
+//        int trumpesniArbaLygus5 = 0;
+//
+//        // Einame per kiekvieną žodį ir tikriname, ar jis trumpesnis arba lygus 5 raidėms
+//
+//            if (zodziai.length ()<= 5) {
+//                trumpesniArbaLygus5++;
 
             }
-
-
-        // Atspausdiname rezultatą
-        System.out.println("Žodžių, trumpesnių arba lygių nei 5 raidės: " + trumpesniArbaLygus5);
+//
+//
+//        // Atspausdiname rezultatą
+//        System.out.println("Žodžių, trumpesnių arba lygių nei 5 raidės: " + trumpesniArbaLygus5);
 
 //Tai yra ekvivalentiškas kodas Java kalba. Jis taip pat skaido sakinį į žodžius, einą per kiekvieną žodį ir tikrina, ar jis trumpesnis arba lygus 5 raidėms, ir prideda vienetą prie kintamojo, jei sąlyga yra tenkinama. Galiausiai atspausdinamas rezultatas.
 
@@ -145,4 +146,3 @@ public class Main {
 
 
     }
-}

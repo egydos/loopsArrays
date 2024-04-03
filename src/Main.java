@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         //         012345
-        String name = "naglisaaa";
+        String name = "naglisaaa1@";
         System.out.println(name.contains("a")); // jeigu randa zodyje a raide tada true ismeta, jei neranda tada false
         System.out.println(name.contains("h"));// jeigu randa zodyje h raide tada true ismeta, jei neranda tada false
         System.out.println(name.toLowerCase());// keicia visas raides i mazasias
@@ -23,6 +23,10 @@ public class Main {
         System.out.println(name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase() + " pakeicia 1 raide i didziaja, o kitas mazosiomis");  // Paima pirma raide ir padaro ja didziaja, antra raide ir kitos bus mazosios
         System.out.println("substring 2 " + name.substring(2, 5));// atsakymas (be pirmu 2 raidziu) bus  iki 5 simbolio (5tas simbolis ieina) 6 + simboliai neieina
         System.out.println(name.replace("a", "i"));// pakeicia visas raides is a -> i
+        System.out.println(name.replaceAll("[^a-zA-Z0-9\\s]", "zzzzzzzzzzz")); // pakeicia visus specialius simbolius i zzzzzzzzzz
+        System.out.println(name.replaceAll("\\d+", "bbbbbbb"));// pakeicia visus skaicius i bbbbbbb
+        System.out.println(name.replaceAll("[a-z]", "aaaaaaa")); // pakeicia visas mazasias raides i aaaaaaaa
+
         System.out.println(name.replaceFirst("a", "i"));// pakeicia tik pirma a raide zodyje, kitas a raides nekeicia.
         System.out.println(name.replace("a", "O").replace("i", "U"));// pakeicia a -> O ir visas i -> U
 

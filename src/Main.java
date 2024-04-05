@@ -26,6 +26,10 @@ public class Main {
         System.out.println(name.replaceAll("[^a-zA-Z0-9\\s]", "zzzzzzzzzzz")); // pakeicia visus specialius simbolius i zzzzzzzzzz
         System.out.println(name.replaceAll("\\d+", "bbbbbbb"));// pakeicia visus skaicius i bbbbbbb
         System.out.println(name.replaceAll("[a-z]", "aaaaaaa")); // pakeicia visas mazasias raides i aaaaaaaa
+//String skaiciusString = textas1.substring(0, textas1.indexOf(" ")); // Išgauname skaičių iki pirmo tarpo
+//String skaiciusString10 = textas10.substring(textas10.lastIndexOf(" ")+1); // turi buti +1 nes be +1 istrauks ir tarpa pries texta
+//        char istraukiucharVienas = name.charAt(0); // turi buti char, nes traukiame char tipo kintamaji o velau ji konvertuosim i int or double
+
 
         System.out.println(name.replaceFirst("a", "i"));// pakeicia tik pirma a raide zodyje, kitas a raides nekeicia.
         System.out.println(name.replace("a", "O").replace("i", "U"));// pakeicia a -> O ir visas i -> U
